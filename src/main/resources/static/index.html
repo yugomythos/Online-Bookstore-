@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A premium online bookstore to explore, discover, and purchase your next favorite read.">
+    <title>Lumina Books</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="logo" onclick="app.navigate('home')">Lumina<span>Books</span></h1>
+            <div class="nav-links">
+                <a href="#" onclick="app.navigate('home'); return false;">Home</a>
+                <a href="#" onclick="app.navigate('cart'); return false;" class="cart-link">
+                    Cart <span id="cart-count" class="cart-badge">0</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main id="app-content">
+        <!-- Dynamic Content Injected Here -->
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Lumina Books. Crafted with passion.</p>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast"></div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
